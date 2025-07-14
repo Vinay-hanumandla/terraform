@@ -20,6 +20,8 @@ resource "aws_instance" "bastion-host" {
   ami           = data.aws_ami.latest-amzn-linux-image.id
   subnet_id     = var.dev-pub-sub-id
   instance_type = var.instance_type
+  key_name = var.key_pair_name #EC2 key pair name 
+  vpc_security_group_ids = [aws_security_group.dev-bastion-sg.id] #Associate the SG 
   tags = {
     Name      = "dev-bastion"
     Terraform = "true"

@@ -24,6 +24,7 @@ variable "vpc-id" {
 variable "key_pair_name" {
   description = "Name of the ec2 key pair"
   type        = string
+  default = "eks-project-key"
 }
 
 
