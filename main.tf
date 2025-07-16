@@ -18,7 +18,7 @@ module "eks" {
 
   cluster_name       = "dev-eks-cluster"
   private_subnet_ids = [module.vpc.dev-pvt-sub-1-id, module.vpc.dev-pvt-sub-2-id]
-  k8s_version        = "1.33"
+  k8s_version        = "1.32"
 }
 
 
