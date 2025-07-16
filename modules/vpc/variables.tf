@@ -32,7 +32,7 @@ variable "pvt_sub_az_1" {
 
 variable "pvt_sub_az_2" {
   description = "AZ of private subnet 2"
-  default     = "us-east-1b"
+  default     = "us-east-1c"
 }
 
 
